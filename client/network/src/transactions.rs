@@ -36,6 +36,7 @@ use crate::{
 };
 
 use codec::{Decode, Encode};
+use std::os::unix::net::UnixStream;
 use futures::{channel::mpsc, prelude::*, stream::FuturesUnordered};
 use libp2p::{multiaddr, PeerId};
 use log::{debug, trace, warn};
